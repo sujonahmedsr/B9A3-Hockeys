@@ -27,6 +27,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'heading-color': '#131318',
+                        'p-color': '#424247',
+                        'bg-color': '#FF4240',
                     }
                 }
             }
@@ -40,8 +43,108 @@
     </style>
 </head>
 
-<body>
+<body class="font-manrope">
+    <!-- header section start  -->
+    <header class="px-5 container mx-auto">
+        <!-- navbar section start  -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-bg-color rounded-box w-60 text-p-color text-base font-normal text-white space-y-4">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <h3 class="text-3xl font-extrabold cursor-pointer">Hockey<span class="text-bg-color">’</span>s</h3>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-p-color text-base font-normal">
+                    <li><a class="text-bg-color hover:bg-bg-color hover:text-white duration-400">Home</a></li>
+                    <li><a class="hover:bg-bg-color hover:text-white duration-300">About</a></li>
+                    <li><a class="hover:bg-bg-color hover:text-white duration-300">Pages</a></li>
+                    <li><a class="hover:bg-bg-color hover:text-white duration-300">Blog</a></li>
+                    <li><a class="hover:bg-bg-color hover:text-white duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <img class="mr-5 cursor-pointer hidden md:block" src="Images/Frame.svg" alt="">
+                <button
+                    class="bg-bg-color px-6 py-3 rounded-lg text-white font-bold border-2 border-bg-color hover:text-bg-color duration-500 hover:bg-transparent">Get
+                    Ticket</button>
+            </div>
+        </div>
 
+        <!-- banner slider section  -->
+        <div class="carousel h-[75vh] w-full rounded-xl">
+            <div id="slide1" class="carousel-item relative w-full ">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute hidden md:block md:bottom-5 md:right-5 p-4 md:p-7 bg-black text-white max-w-[500px] rounded-lg">
+                    <h3 class="text-2xl font-bold pb-4">Meet all the heroes from the field</h3>
+                    <p>Look for sections dedicated to player profiles, achievements, and highlights to get a detailed overview of the iconic figures in hockey.</p>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/2.png" class="w-full" />
+                <div class="absolute hidden md:block md:bottom-5 md:right-5 p-4 md:p-7 bg-black text-white max-w-[500px] rounded-lg">
+                    <h3 class="text-2xl font-bold pb-4">Meet all the heroes from the field</h3>
+                    <p>Look for sections dedicated to player profiles, achievements, and highlights to get a detailed overview of the iconic figures in hockey.</p>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/3.png" class="w-full bg-center" />
+                <div class="absolute hidden md:block md:bottom-5 md:right-5 p-4 md:p-7 bg-black text-white max-w-[500px] rounded-lg">
+                    <h3 class="text-2xl font-bold pb-4">Meet all the heroes from the field</h3>
+                    <p>Look for sections dedicated to player profiles, achievements, and highlights to get a detailed overview of the iconic figures in hockey.</p>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="Images/4.png" class="w-full" />
+                <div class="absolute hidden md:block md:bottom-5 md:right-5 p-4 md:p-7 bg-black text-white max-w-[500px] rounded-lg">
+                    <h3 class="text-2xl font-bold pb-4">Meet all the heroes from the field</h3>
+                    <p>Look for sections dedicated to player profiles, achievements, and highlights to get a detailed overview of the iconic figures in hockey.</p>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 md:p-7 my-5 block md:hidden bg-black text-white rounded-lg">
+            <h3 class="text-2xl font-bold pb-4">Meet all the heroes from the field</h3>
+            <p>Look for sections dedicated to player profiles, achievements, and highlights to get a detailed overview of the iconic figures in hockey.</p>
+        </div>
+    </header>
+    <!-- main section start  -->
+    <main class="px-5 container mx-auto">
+
+    </main>
+    <!-- footer section start  -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
