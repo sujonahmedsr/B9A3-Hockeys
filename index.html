@@ -28,7 +28,7 @@
                     colors: {
                         clifford: '#da373d',
                         'heading-color': '#131318',
-                        'p-color': '#424247',
+                        'p-color': '#3f3f3f',
                         'bg-color': '#FF4240',
                     }
                 }
@@ -39,18 +39,20 @@
     <style>
         .font-manrope {
             font-family: 'Manrope', sans-serif;
+            color: #00ffff21;
         }
+
     </style>
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope text-black">
     <!-- header section start  -->
     <header class="px-5 container mx-auto">
         <!-- navbar section start  -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost text-heading-color lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -66,7 +68,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <h3 class="text-3xl font-extrabold cursor-pointer">Hockey<span class="text-bg-color">’</span>s</h3>
+                <h3 class="text-2xl md:text-4xl font-extrabold cursor-pointer text-heading-color">Hockey<span class="text-bg-color">’</span>s</h3>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-p-color text-base font-normal">
@@ -80,13 +82,13 @@
             <div class="navbar-end">
                 <img class="mr-5 cursor-pointer hidden md:block" src="Images/Frame.svg" alt="">
                 <button
-                    class="bg-bg-color px-6 py-3 rounded-lg text-white font-bold border-2 border-bg-color hover:text-bg-color duration-500 hover:bg-transparent">Get
+                    class="bg-bg-color px-4 py-2 md:px-6 md:py-3 rounded-lg text-white font-bold border-2 border-bg-color hover:text-bg-color duration-500 hover:bg-transparent">Get
                     Ticket</button>
             </div>
         </div>
 
         <!-- banner slider section  -->
-        <div class="carousel h-[75vh] w-full rounded-xl">
+        <div class="carousel h-[60vh] md:h-[75vh] w-full rounded-xl">
             <div id="slide1" class="carousel-item relative w-full ">
                 <img src="Images/1.png" class="w-full" />
                 <div class="absolute hidden md:block md:bottom-5 md:right-5 p-4 md:p-7 bg-black text-white max-w-[500px] rounded-lg">
@@ -139,7 +141,194 @@
     </header>
     <!-- main section start  -->
     <main class="px-5 container mx-auto">
+        <!-- professional hockey club  -->
+        <section class="text-center my-14">
+            <!-- heading for all section  -->
+            <div class="border-t-2 border-b-2 border-dashed border-[#0D0D1221]">
+                <div class="max-w-[600px] mx-auto py-5 md:py-10 space-y-4">
+                    <h3 class="text-4xl font-extrabold text-heading-color">Professional Hockeys Club</h3>
+                    <p class="text-p-color">Explore the dynamic world of professional hockey with our website, providing comprehensive insights into top-tier clubs.</p>
+                </div>
+            </div>
 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+                <div class="space-y-4">
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                    <h4 class="text-2xl font-semibold text-heading-color">Prayer Facility</h4>
+                    <p class="text-p-color">Experience a sense of unity and reflection at our hockey club's dedicated prayer facility.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
+                    <h4 class="text-2xl font-semibold text-heading-color">Experienced Coach</h4>
+                    <p class="text-p-color">our coach is dedicated to maximizing player potential and achieving success both on and off the field.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+                    <h4 class="text-2xl font-semibold text-heading-color">Senior Player</h4>
+                    <p class="text-p-color">our senior player brings a valuable presence to the team, inspiring and contributing to our collective success.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                    <h4 class="text-2xl font-semibold text-heading-color">Training Ground</h4>
+                    <p class="text-p-color">our training ground is the crucible where dedication meets excellence, shaping athletes and forging victories on the field.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- program section start  -->
+        <section class="my-14">
+            <!-- heading for all section  -->
+            <div class="border-t-2 border-b-2 border-dashed border-[#0D0D1221]">
+                <div class="max-w-[600px] mx-auto py-5 md:py-10 space-y-4 text-center">
+                    <h3 class="text-4xl font-extrabold text-heading-color">Program Sections</h3>
+                    <p class="text-p-color"> our dedicated sections cater to the holistic growth and engagement of participants at every level.</p>
+                </div>
+            </div>
+
+            <div class="flex img-gradiant flex-col gap-5 my-10">
+                <div class="grid gap-5 grid-cols-1 md:grid-cols-2 text-white">
+                    <div class="relative">
+                        <img src="Images/2.png" alt="Junior Program" class="w-full h-[350px]">
+                        <div class="bg-black absolute inset-0 bg-opacity-60 rounded-2xl"></div>
+                        <div class="absolute left-2 bottom-2 space-y-4 p-5">
+                            <h3 class="text-2xl font-bold">Junior Program</h3>
+                            <p>Enroll in our dynamic Junior Program designed for aspiring young athletes.our program provides a nurturing environment where juniors can grow both as individuals and as future stars in the world of sports.</p>
+                            <button class="bg-bg-color px-4 py-2 md:px-6 md:py-3 rounded-lg text-white font-bold border-2 border-bg-color hover:text-white duration-500 hover:bg-transparent">Register Now!</button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="Images/3.png" alt="Junior Program" class="w-full h-[350px]">
+                        <div class="bg-black absolute inset-0 bg-opacity-60 rounded-2xl"></div>
+                        <div class="absolute left-2 bottom-2 space-y-4 p-5">
+                            <h3 class="text-2xl font-bold">Teenager Program</h3>
+                            <p>Enroll in our dynamic Teenager Program designed for aspiring young athletes.our program provides a nurturing environment where juniors can grow both as individuals and as future stars in the world of sports.</p>
+                            <button class="bg-bg-color px-4 py-2 md:px-6 md:py-3 rounded-lg text-white font-bold border-2 border-bg-color hover:text-white duration-500 hover:bg-transparent">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative text-white ">
+                    <img src="Images/4.png" alt="Junior Program" class="w-full h-[350px] md:h-full">
+                    <div class="bg-black absolute inset-0 bg-opacity-60 rounded-2xl"></div>
+                    <div class="absolute left-2 bottom-2 space-y-4 p-5 md:max-w-[50%] ">
+                        <h3 class="text-2xl font-bold">Professional Program</h3>
+                        <p>Join our elite Professional Program tailored for athletes seeking top-tier training, strategic development, and career advancement.This program is designed to hone skills, optimize performance, and propel athletes to the pinnacle of their professional careers.</p>
+                        <button class="bg-bg-color px-4 py-2 md:px-6 md:py-3 rounded-lg text-white font-bold border-2 border-bg-color hover:text-white duration-500 hover:bg-transparent">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our new products  -->
+        <section class="my-14">
+            <!-- heading for all section  -->
+            <div class="border-t-2 border-b-2 border-dashed border-[#0D0D1221]">
+                <div class="max-w-[600px] mx-auto py-5 md:py-10 space-y-4 text-center">
+                    <h3 class="text-4xl font-extrabold text-heading-color">Our New Products</h3>
+                    <p class="text-p-color">Explore our latest innovations with our new products lineup.Discover the next level of quality and innovation in our latest collection.</p>
+                </div>
+            </div>
+
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-2 my-10">
+                <div class="flex gap-5 items-center flex-col md:flex-row border-2 border-gray-200 p-5 rounded-xl">
+                    <img src="Images/5.png" alt="clothes">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-7 text-gray-500">
+                            <p><i class="fa-solid fa-star mr-2 text-yellow-500"></i>5.0</p>
+                            <p><i class="fa-regular fa-eye mr-2"></i>20</p>
+                            <p><i class="fa-regular fa-heart mr-2"></i>200</p>
+                        </div>
+                        <h4 class="text-xl font-bold">World Cup Flags Football</h4>
+                        <p class="text-p-color">Show your team spirit with our World Cup Flags Football collection.</p>
+                        <div class="flex items-center justify-between">
+                            <p class="font-extrabold text-bg-color text-lg">Price - $22.00</p>
+                            <p class="font-medium text-gray-500"><i class="fa-solid fa-shopping-cart"></i> Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-5 items-center flex-col md:flex-row border-2 border-gray-200 p-5 rounded-xl">
+                    <img src="Images/6.png" alt="clothes">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-7 text-gray-500">
+                            <p><i class="fa-solid fa-star mr-2 text-yellow-500"></i>5.0</p>
+                            <p><i class="fa-regular fa-eye mr-2"></i>20</p>
+                            <p><i class="fa-regular fa-heart mr-2"></i>200</p>
+                        </div>
+                        <h4 class="text-xl font-bold">World Cup Hockey Ball</h4>
+                        <p class="text-p-color">Show your team spirit with our World Cup Flags Football collection.</p>
+                        <div class="flex items-center justify-between">
+                            <p class="font-extrabold text-bg-color text-lg">Price - $22.00</p>
+                            <p class="font-medium text-gray-500"><i class="fa-solid fa-shopping-cart"></i> Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-5 items-center flex-col md:flex-row border-2 border-gray-200 p-5 rounded-xl">
+                    <img src="Images/7.png" alt="clothes">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-7 text-gray-500">
+                            <p><i class="fa-solid fa-star mr-2 text-yellow-500"></i>5.0</p>
+                            <p><i class="fa-regular fa-eye mr-2"></i>20</p>
+                            <p><i class="fa-regular fa-heart mr-2"></i>200</p>
+                        </div>
+                        <h4 class="text-xl font-bold">Cap For Hockeys</h4>
+                        <p class="text-p-color">Show your team spirit with our World Cup Flags Football collection.</p>
+                        <div class="flex items-center justify-between">
+                            <p class="font-extrabold text-bg-color text-lg">Price - $22.00</p>
+                            <p class="font-medium text-gray-500"><i class="fa-solid fa-shopping-cart"></i> Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-5 items-center flex-col md:flex-row border-2 border-gray-200 p-5 rounded-xl">
+                    <img src="Images/8.png" alt="clothes">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-7 text-gray-500">
+                            <p><i class="fa-solid fa-star mr-2 text-yellow-500"></i>5.0</p>
+                            <p><i class="fa-regular fa-eye mr-2"></i>20</p>
+                            <p><i class="fa-regular fa-heart mr-2"></i>200</p>
+                        </div>
+                        <h4 class="text-xl font-bold">World Cup Teams Jersey</h4>
+                        <p class="text-p-color">Show your team spirit with our World Cup Flags Football collection.</p>
+                        <div class="flex items-center justify-between">
+                            <p class="font-extrabold text-bg-color text-lg">Price - $22.00</p>
+                            <p class="font-medium text-gray-500"><i class="fa-solid fa-shopping-cart"></i> Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-5 items-center flex-col md:flex-row border-2 border-gray-200 p-5 rounded-xl">
+                    <img src="Images/9.png" alt="clothes">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-7 text-gray-500">
+                            <p><i class="fa-solid fa-star mr-2 text-yellow-500"></i>5.0</p>
+                            <p><i class="fa-regular fa-eye mr-2"></i>20</p>
+                            <p><i class="fa-regular fa-heart mr-2"></i>200</p>
+                        </div>
+                        <h4 class="text-xl font-bold">Hockey Helmet</h4>
+                        <p class="text-p-color">Show your team spirit with our World Cup Flags Football collection.</p>
+                        <div class="flex items-center justify-between">
+                            <p class="font-extrabold text-bg-color text-lg">Price - $22.00</p>
+                            <p class="font-medium text-gray-500"><i class="fa-solid fa-shopping-cart"></i> Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-5 items-center flex-col md:flex-row border-2 border-gray-200 p-5 rounded-xl">
+                    <img src="Images/10.png" alt="clothes">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-7 text-gray-500">
+                            <p><i class="fa-solid fa-star mr-2 text-yellow-500"></i>5.0</p>
+                            <p><i class="fa-regular fa-eye mr-2"></i>20</p>
+                            <p><i class="fa-regular fa-heart mr-2"></i>200</p>
+                        </div>
+                        <h4 class="text-xl font-bold">World Cup Football</h4>
+                        <p class="text-p-color">Show your team spirit with our World Cup Flags Football collection.</p>
+                        <div class="flex items-center justify-between">
+                            <p class="font-extrabold text-bg-color text-lg">Price - $22.00</p>
+                            <p class="font-medium text-gray-500"><i class="fa-solid fa-shopping-cart"></i> Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
     <!-- footer section start  -->
     <footer>
